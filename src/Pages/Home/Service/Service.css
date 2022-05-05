@@ -1,6 +1,17 @@
-.service{
+.service {
     border: 1px solid lightgray;
     border-radius: 10px;
-    padding-bottom: 10px;
     text-align: center;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.service>img {
+    border-radius: 2rem;
+}
+
+.manage-button {
+    bottom: 1rem;
+    position: absolute;
 }

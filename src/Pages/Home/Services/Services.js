@@ -18,7 +18,7 @@ const Services = () => {
                 <h1 className='text-primary text-center mt-5'> Our Services</h1>
                 <div className="services-container">
                     {
-                        services.map(service => <Service
+                        services.slice(0, 6).map(service => <Service
                             key={service._id}
                             service={service}
                         >

@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap');
+
+/* variable define */
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+  --inter: 'Inter', sans-serif;
+  --manrope: 'Manrope', sans-serif;
+}
+
+/* variable define end */
+
+li {
+  font-family: var(--poppins) !important;
+}
+
+h1 {
+  font-family: var(--manrope);
+}
+
+h2 {
+  font-family: var(--inter);
+}
+
+h5 {
+  font-family: var(--poppins);
+}
+
+p {
+  font-family: var(--poppins);
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +64,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
