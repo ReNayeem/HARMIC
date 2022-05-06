@@ -1,4 +1,5 @@
 import React from 'react';
+import AllItems from '../../AllItems/AllItems';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Banner from '../Banner/Banner';
 import Experts from '../Experts/Experts';
@@ -10,6 +11,7 @@ const Home = () => {
             <PageTitle title="Home"></PageTitle>
             <Banner></Banner>
             <Items></Items>
+            <AllItems></AllItems>
             <Experts></Experts>
         </>
     );

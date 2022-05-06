@@ -14,6 +14,7 @@ import ItemDetail from './Pages/ItemDetail/ItemDetail';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import AllItems from './Pages/AllItems/AllItems';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/item/:itemId' element={<ItemDetail></ItemDetail>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/AllItems" element={<AllItems></AllItems>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/checkout/:itemId" element={
           <RequireAuth>
