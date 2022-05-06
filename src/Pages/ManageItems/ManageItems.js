@@ -1,8 +1,8 @@
 import React from 'react';
-import useServices from '../../hooks/useServices';
+import useItems from '../../hooks/useItems';
 
-const ManageServices = () => {
-    const [services, setServices] = useServices();
+const ManageItems = () => {
+    const [items, setItems] = useItems();
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
@@ -14,17 +14,17 @@ const ManageServices = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
-                    const remaining = services.filter(service => service._id !== id);
-                    setServices(remaining);
+                    const remaining = items.filter(item => item._id !== id);
+                    setItems(remaining);
                 })
         }
     }
     return (
         <div className='w-50 mx-auto'>
-            <h2>Manage your services</h2>
+            <h2>Manage your items</h2>
             {
-                services.map(service => <div key={service._id}>
-                    <h5>{service.name} <button onClick={() => handleDelete(service._id)}>X</button></h5>
+                items.map(item => <div key={item._id}>
+                    <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
 
                 </div>)
             }
@@ -32,4 +32,4 @@ const ManageServices = () => {
     );
 };
 
-export default ManageServices;
+export default ManageItems;

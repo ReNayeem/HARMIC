@@ -34,7 +34,7 @@ const Order = () => {
             <h2>Your orders: {orders.length}</h2>
             {
                 orders.map(order => <div key={order._id}>
-                    <p>{order.email} : {order.service}</p>
+                    <p>{order.email} : {order.item}</p>
                 </div>)
             }
         </div>

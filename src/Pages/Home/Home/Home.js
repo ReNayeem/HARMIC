@@ -2,14 +2,14 @@ import React from 'react';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Banner from '../Banner/Banner';
 import Experts from '../Experts/Experts';
-import Services from '../Services/Services';
+import Items from '../Items/Items';
 
 const Home = () => {
     return (
         <>
             <PageTitle title="Home"></PageTitle>
             <Banner></Banner>
-            <Services></Services>
+            <Items></Items>
             <Experts></Experts>
         </>
     );

@@ -1,4 +1,4 @@
-.service {
+.item {
     border: 1px solid lightgray;
     border-radius: 10px;
     text-align: center;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.service>img {
+.item>img {
     border-radius: 2rem;
 }
 
