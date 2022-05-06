@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Pride.css'
 
 const Pride = () => {
@@ -22,7 +23,9 @@ const Pride = () => {
                         <p>Common items at supplying organizations include fish and chips, sandwiches, pitas, hamburgers,
                             fried chicken, french fries, onion rings, chicken nuggets, tacos, pizza, hot dogs, and ice
                             cream.</p>
-                        <button className="btn btn-success lh-1g px-4 py-2 mb-3">BROWSE ITEMS</button>
+                        <Link as={Link} to="/AllItems">
+                            <button className="btn btn-success lh-1g px-4 py-2 mb-3">BROWSE ITEMS</button>
+                        </Link>
                     </div>
                     <div className="col-lg-6 col-md-12 order-1 order-md-1">
                         <h2 className="text-success fw-bold text-capitalize">We Deliver everything by trusted partners with the best
@@ -35,7 +38,9 @@ const Pride = () => {
                             <li>High-fructose Corn Syrup: Sweetener.</li>
                             <li>Caramel Color: Color Additive.</li>
                         </ul>
-                        <button className="btn btn-success lh-1g px-4 py-2">BROWSE ITEMS</button>
+                        <Link as={Link} to="/AllItems">
+                            <button className="btn btn-success lh-1g px-4 py-2 mb-3">BROWSE ITEMS</button>
+                        </Link>
                     </div>
                     <div className="col-lg-6 col-md-12 order-0 order-lg-2">
                         <div>
