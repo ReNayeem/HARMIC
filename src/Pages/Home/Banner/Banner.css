@@ -1,0 +1,117 @@
+/* button for both section start */
+.first-section-button {
+    border: none;
+    background: none;
+}
+
+.first-section-button span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.first-section-button svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.first-section-button:hover svg {
+    transform: translateX(0);
+}
+
+.first-section-button:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.first-section-button:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* button for both section end */
+
+/* first section start */
+.first-section {
+    background-color: whitesmoke;
+}
+
+.home-first-section {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-first-section div {
+    padding: 2rem;
+}
+
+.product-image {
+    height: 350px;
+}
+
+.product-name-text {
+    text-align: start;
+}
+
+.h1-text-highlight {
+    color: gray;
+}
+
+.h1-text-highlight-2 {
+    color: rgb(73, 73, 73);
+}
+
+.product-detail {
+    text-align: start;
+    color: rgb(99, 99, 99);
+}
+
+/* first section end */
+
+/* second section start */
+.second-section {
+    background-color: rgb(233, 233, 233);
+}
+
+.home-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+/* second section end */
+
+/* media query for product aka first section */
+@media only screen and (max-width: 995px) {
+    .home-first-section {
+        flex-wrap: wrap;
+    }
+
+    .first-order {
+        order: 1;
+    }
+
+    .second-order {
+        order: 0;
+    }
+}
