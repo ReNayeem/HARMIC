@@ -20,7 +20,8 @@
 }
 
 .supplier-section .carousel-caption img {
-    max-width: 5rem;
+    max-width: 7em;
+    border-radius: 50%;
 }
 
 .supplier-section .carousel-caption p {
@@ -29,4 +30,11 @@
     font-weight: 300;
     color: white;
     padding: 0 11% .625rem;
+}
+
+@media only screen and (max-width: 440px) {
+    .supplier-section .carousel-caption img {
+        max-width: 5em;
+        border-radius: 50%;
+    }
 }

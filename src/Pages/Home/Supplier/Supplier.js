@@ -25,26 +25,26 @@ const Supplier = () => {
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
                                             <div className="carousel-caption">
-                                                <img src="Resources/Suppliers/person1.png" alt="" />
-                                                <p>Our attendees know what to expect when they set foot on the show floor.
+                                                <img src="Resources/Suppliers/person1.jpg" alt="" />
+                                                <p>Our buyers know what to expect when they set foot on the business floor.
                                                 </p>
-                                                <h5>Randy Vice</h5>
+                                                <h5>Md. Sharif</h5>
                                             </div>
                                         </div>
                                         <div className="carousel-item">
                                             <div className="carousel-caption">
-                                                <img src="Resources/Suppliers/person2.png" alt="" />
-                                                <p>Jadu Convention Center has thousands of glass walls to let
-                                                    that priceless experience.
+                                                <img src="Resources/Suppliers/person2.jpg" alt="" />
+                                                <p>Harmic has thousands of items to let
+                                                    that extraordinary experience.
                                                 </p>
-                                                <h5>Suresh Goolcharan</h5>
+                                                <h5>Rashid Akbar</h5>
                                             </div>
                                         </div>
                                         <div className="carousel-item">
                                             <div className="carousel-caption">
-                                                <img src="Resources/Suppliers/person3.png" alt="" />
-                                                <p>You can't put words or price tag on that!</p>
-                                                <h5>Randy Vice</h5>
+                                                <img src="Resources/Suppliers/person3.jpg" alt="" />
+                                                <p>You can't put words or price tag on business!</p>
+                                                <h5>Halim Mia</h5>
                                             </div>
                                         </div>
                                     </div>
