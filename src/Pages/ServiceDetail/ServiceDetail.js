@@ -9,6 +9,7 @@ const ServiceDetail = () => {
     return (
         <div>
             <h2>You are about to book: {service.name}</h2>
+            <img src={service.img} alt="" />
             <div className='text-center'>
                 <Link to={`/checkout/${serviceId}`}>
                     <button className='btn btn-primary'>Proceed Checkout</button>
