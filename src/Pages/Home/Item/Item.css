@@ -1,6 +1,5 @@
 .item {
-    border: 1px solid lightgray;
-    border-radius: 10px;
+    border: 1px solid #e9e9e9;
     text-align: center;
     padding: 1rem;
     padding-bottom: 3rem;
@@ -14,4 +13,21 @@
 .manage-button {
     bottom: 1rem;
     position: absolute;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item-description {
+    font-size: 14px;
+    line-height: 26px;
+    color: #626262;
+    margin-top: .4rem;
+}
+
+.item-detail {
+    font-size: 15px;
+    margin: 0;
 }

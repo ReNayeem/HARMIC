@@ -15,7 +15,10 @@ const Items = () => {
     return (
         <div id="items" className='container'>
             <div className="row">
-                <h1 className='text-primary text-center my-5'> Our items</h1>
+                <div className='my-5 text-center'>
+                    <h5 className='item-h5'>SEE OUR LATEST</h5>
+                    <h1 className='item-h1'>ARRIVAL ITEMS</h1>
+                </div>
                 <div className="items-container">
                     {
                         items.slice(0, 6).map(item => <Item

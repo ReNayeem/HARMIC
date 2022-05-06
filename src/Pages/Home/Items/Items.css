@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .items-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+}
+
+.item-h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 26.4px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #aab34f;
+}
+
+.item-h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 /* make items responsive */

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 /* button for both section start */
 .first-section-button {
     border: none;
@@ -51,7 +53,6 @@
 
 /* button for both section end */
 
-/* first section start */
 .first-section {
     background-color: whitesmoke;
 }
@@ -94,20 +95,11 @@
     color: rgb(99, 99, 99);
 }
 
-/* first section end */
-
-/* second section start */
-.second-section {
-    background-color: rgb(233, 233, 233);
+.banner-h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    line-height: 30px;
 }
-
-.home-reviews {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-/* second section end */
 
 /* media query for product aka first section */
 @media only screen and (max-width: 995px) {

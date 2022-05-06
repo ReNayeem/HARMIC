@@ -15,6 +15,7 @@ const Banner = () => {
                 <div className='first-section'>
                     <div className='home-first-section container d-flex'>
                         <div className='first-order'>
+                            <h2 className='mb-3 banner-h2'>Natural & Organic</h2>
                             <h1 className='product-name-text'><span className='h1-text-highlight-b1'>Bazaar!</span> <span className='h1-text-highlight-2'>Start stocking your daily morning market with us.</span></h1>
                             <br />
                             <p className='product-detail'></p>
@@ -37,6 +38,7 @@ const Banner = () => {
                 <div className='first-section'>
                     <div className='home-first-section container d-flex'>
                         <div className='first-order'>
+                            <h2 className='mb-3 banner-h2'>Natural & Organic</h2>
                             <h1 className='product-name-text'><span className='h1-text-highlight-b2'>Available?</span> <span className='h1-text-highlight-2'>All kinds of protein, and vitamin ingredients.</span></h1>
                             <br />
                             <p className='product-detail'></p>
@@ -59,6 +61,7 @@ const Banner = () => {
                 <div className='first-section'>
                     <div className='home-first-section container d-flex'>
                         <div className='first-order'>
+                            <h2 className='mb-3 banner-h2'>Natural & Organic</h2>
                             <h1 className='product-name-text'><span className='h1-text-highlight-b3'>Fruits!</span> <span className='h1-text-highlight-2'>Nothing can be compared when it comes to fruits.</span></h1>
                             <br />
                             <p className='product-detail'></p>

@@ -1,6 +1,7 @@
 .navbar {
     background-color: rgba(255, 255, 255, 0.904);
     box-shadow: 5px 10px 8px #8888880e;
+    height: 80px;
 }
 
 .navbar-link {

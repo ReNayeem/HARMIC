@@ -12,10 +12,10 @@ const Item = ({ item }) => {
     return (
         <div className='item d-flex flex-column  align-items-center'>
             <img className='w-75' src={img} alt="" />
-            <h3>{name}</h3>
-            <p>Price: {price} TK</p>
-            <p>Quantity: {quantity}</p>
-            <p><small>{description}</small></p>
+            <h3 className='item-name'>{name}</h3>
+            <p className='item-detail'>৳ {price} TK</p>
+            <p className='item-detail'>Quantity: {quantity}</p>
+            <p className='item-description'><small>{description}</small></p>
             <button onClick={() => navigateToItemDetail(_id)} className='btn manage-button btn-success'>Manage Stock</button>
         </div>
     );

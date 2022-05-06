@@ -7,7 +7,7 @@ const AllItems = () => {
     return (
         <div id="items" className='container'>
             <div className="row">
-                <h1 className='text-primary text-center my-5'> Our items</h1>
+                <h1 className='text-primary text-center my-5'>All items</h1>
                 <div className="items-container">
                     {
                         items.map(item => <Item
