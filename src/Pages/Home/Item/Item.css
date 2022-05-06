@@ -13,6 +13,19 @@
 .manage-button {
     bottom: 1rem;
     position: absolute;
+    padding: .3rem .8rem;
+    background-color: rgba(34, 139, 34, 0.774);
+    color: white;
+    border: 2px solid rgba(34, 139, 34, 0.774);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color .5s, background-color 1s;
+}
+
+.manage-button:hover {
+    background-color: white;
+    color: rgba(34, 139, 34, 0.774);
 }
 
 .item-name {
@@ -25,6 +38,7 @@
     line-height: 26px;
     color: #626262;
     margin-top: .4rem;
+    margin-bottom: .4rem;
 }
 
 .item-detail {

@@ -1,0 +1,32 @@
+.wrapper {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+}
+
+.supplier-section {
+    background: whitesmoke;
+    font-family: var(--poppins);
+}
+
+.supplier-section h2 {
+    color: #be93fd;
+}
+
+.supplier-section .carousel-item {
+    padding: 10rem 3.125rem;
+    background-color: rgba(34, 139, 34, 0.61);
+    border-radius: .9375rem;
+    text-align: center;
+}
+
+.supplier-section .carousel-caption img {
+    max-width: 5rem;
+}
+
+.supplier-section .carousel-caption p {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    font-weight: 300;
+    color: white;
+    padding: 0 11% .625rem;
+}
