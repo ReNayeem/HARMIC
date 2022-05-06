@@ -39,7 +39,7 @@
     height: 1.5px;
     bottom: 0;
     left: 0;
-    background-color: #000000;
+    background-color: forestgreen;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -73,8 +73,16 @@
     text-align: start;
 }
 
-.h1-text-highlight {
-    color: gray;
+.h1-text-highlight-b1 {
+    color: forestgreen;
+}
+
+.h1-text-highlight-b2 {
+    color: #de7a03;
+}
+
+.h1-text-highlight-b3 {
+    color: orangered;
 }
 
 .h1-text-highlight-2 {

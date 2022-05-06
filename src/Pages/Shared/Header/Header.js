@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../../src/harmic.png'
+import './Header.css'
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -15,20 +16,20 @@ const Header = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" sticky='top' bg="success" variant="dark">
+            <Navbar className='navbar' collapseOnSelect expand="lg" sticky='top'>
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <img src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="me-auto navbar-link">
                             {/* <Nav.Link href="home">Home</Nav.Link> */}
                             <Nav.Link as={Link} to="home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/AllItems">Items</Nav.Link>
                             <Nav.Link as={Link} to="about">Blogs</Nav.Link>
                         </Nav>
-                        <Nav>
+                        <Nav className='navbar-link'>
                             {
                                 user && <>
                                     <Nav.Link as={Link} to="AddItem">Add</Nav.Link>
@@ -38,7 +39,7 @@ const Header = () => {
                             }
                             {
                                 user ?
-                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign out</button>
+                                    <button className='btn navbar-link btn-link text-decoration-none' onClick={handleSignOut}>Sign out</button>
                                     :
                                     <Nav.Link as={Link} to="login">
                                         Login
