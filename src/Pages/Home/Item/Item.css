@@ -14,9 +14,9 @@
     bottom: 1rem;
     position: absolute;
     padding: .3rem .8rem;
-    background-color: rgba(34, 139, 34, 0.774);
+    background-color: forestgreen;
     color: white;
-    border: 2px solid rgba(34, 139, 34, 0.774);
+    border: 2px solid forestgreen;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
@@ -25,7 +25,7 @@
 
 .manage-button:hover {
     background-color: white;
-    color: rgba(34, 139, 34, 0.774);
+    color: forestgreen;
 }
 
 .item-name {

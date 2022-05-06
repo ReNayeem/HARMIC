@@ -5,7 +5,7 @@ const Supplier = () => {
     return (
         <div>
             <section id="supplier">
-                <div className="wrapper my-5 supplier-section">
+                <div className="wrapper supplier-section">
                     <div className="container text-center">
                         <div className='mb-5 text-center'>
                             <h5 className='item-h5'>OUR TRUSTED</h5>

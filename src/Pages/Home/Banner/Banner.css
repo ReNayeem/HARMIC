@@ -115,3 +115,9 @@
         order: 0;
     }
 }
+
+@media only screen and (max-width: 440px) {
+    .product-image {
+        max-height: 310px;
+    }
+}
