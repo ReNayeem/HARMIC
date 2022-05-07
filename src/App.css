@@ -32,6 +32,7 @@ p {
 
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {

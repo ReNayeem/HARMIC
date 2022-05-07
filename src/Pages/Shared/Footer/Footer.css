@@ -1,5 +1,7 @@
 .footer {
     background: #1e1d23;
+    position: sticky;
+    top: 100%;
 }
 
 .footer .footer-link {

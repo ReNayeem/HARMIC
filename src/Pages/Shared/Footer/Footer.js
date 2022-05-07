@@ -5,7 +5,7 @@ const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
     return (
-        <footer id="footer">
+        <footer className="footer">
             <div className="footer pt-5">
                 <div className="container">
                     <div className="row">
@@ -24,7 +24,7 @@ const Footer = () => {
                             <form className="newsletter">
                                 <div className="d-flex">
                                     <input className="form-control" placeholder="email address here" type="email" />
-                                    <button className="footer-button" type="submit">Subscribe</button>
+                                    <button className="footer-button" disabled type="">Subscribe</button>
                                 </div>
                             </form>
                         </div>

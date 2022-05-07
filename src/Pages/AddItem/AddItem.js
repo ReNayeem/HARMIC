@@ -6,7 +6,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `https://harmic.herokuapp.com/items`;
+        const url = `http://localhost:5000/items`;
         fetch(url, {
             method: 'POST',
             headers: {

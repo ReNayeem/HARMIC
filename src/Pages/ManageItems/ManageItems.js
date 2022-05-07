@@ -7,7 +7,7 @@ const ManageItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://harmic.herokuapp.com/items/${id}`;
+            const url = `http://localhost:5000/items/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

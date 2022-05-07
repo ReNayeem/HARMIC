@@ -1,11 +1,12 @@
 import React from 'react';
 import useItems from '../../hooks/useItems';
 import Item from '../Home/Item/Item';
+import './AllItems.css'
 
 const AllItems = () => {
     const [items, setItems] = useItems()
     return (
-        <div id="items" className='container'>
+        <div id="items" className='container mb-5'>
             <div className="row">
                 <h1 className='text-primary text-center my-5'>All items</h1>
                 <div className="items-container">
