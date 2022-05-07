@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import MyItem from '../MyItem/MyItem';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const MyItems = () => {
@@ -11,14 +10,14 @@ const MyItems = () => {
     useEffect(() => {
         const myItemsHandle = async () => {
             const email = user.email
-            const url = `http://localhost:5000/AddItem?email=${email}`;
+            const url = `https://harmic.herokuapp.com/AddItem?email=${email}`;
             const { data } = await axios.get(url)
             setMyItems(data)
         }
         myItemsHandle()
     }, [user.email])
     return (
-        <div>
+        <div className='mb-5 mx-3'>
             <PageTitle title="My Items"></PageTitle>
             <div>
                 <div className='my-5 text-center'>

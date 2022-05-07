@@ -22,7 +22,7 @@ const ItemDetail = () => {
             description: item.description,
             price: item.price
         }
-        const url = `http://localhost:5000/items/${itemId}`
+        const url = `https://harmic.herokuapp.com/items/${itemId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -54,7 +54,7 @@ const ItemDetail = () => {
             description: item.description,
             price: item.price
         }
-        const url = `http://localhost:5000/items/${itemId}`
+        const url = `https://harmic.herokuapp.com/items/${itemId}`
         fetch(url, {
             method: 'PUT',
             headers: {
