@@ -1,40 +1,50 @@
-.item-details {
-    height: calc(100vh - 61px - 230.683px - 230px);
-}
-
 .item-detail-image {
     max-height: 400px;
 }
 
-@media only screen and (max-width: 440px) {
-    .item-details {
-        min-height: 100vh !important;
-    }
-
-    .item-detail-image {
-        height: 250px !important;
-    }
+.deliver-button {
+    background-color: rgb(117, 117, 117);
+    color: white;
+    padding: 0rem 1.48rem;
+    border: 2px solid rgb(117, 117, 117);
+    transition: border 1s, color .5s;
 }
 
-@media only screen and (max-width: 990px) {
-    .item-details {
-        min-height: calc(100vh - 61px - 230.683px - 79.6px);
-        flex-direction: column;
-    }
-
-    .item-detail-image {
-        height: 400px;
-    }
+.deliver-button:hover {
+    background-color: white;
+    color: rgb(117, 117, 117);
+    border: 2px solid rgb(117, 117, 117);
 }
 
-@media only screen and (max-width: 1080px) {
-    .item-details {
-        min-height: 100vh !important;
-    }
+.update-stock-button {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 0rem 1.48rem;
+    border: 2px solid darkolivegreen;
+    transition: border 1s, color .5s;
 }
 
-@media only screen and (max-width: 1200px) {
-    .item-details {
-        min-height: 100vh !important;
-    }
+.update-stock-button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.quantity-input {
+    max-width: 11rem;
+    border: 2px solid darkolivegreen;
+    transition: border 1s, color .5s;
+}
+
+.update-item:hover .quantity-input {
+    border: 2px solid black;
+}
+
+.update-item:hover .update-stock-button {
+    border: 2px solid black;
+    background-color: black;
+}
+
+.quantity-input:focus {
+    outline: none;
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Item from '../Item/Item';
 import './Items.css';
 
@@ -14,6 +15,7 @@ const Items = () => {
 
     return (
         <div id="items" className='container'>
+            <PageTitle title="Home"></PageTitle>
             <div className="row">
                 <div className='my-5 text-center'>
                     <h5 className='item-h5'>SEE OUR LATEST</h5>

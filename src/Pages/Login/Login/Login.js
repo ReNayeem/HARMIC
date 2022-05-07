@@ -5,10 +5,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import toast from 'react-hot-toast';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
-import axios from 'axios';
 import useToken from '../../../hooks/useToken';
 import './Login.css'
 
@@ -57,15 +55,15 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            toast.success('Reset password email sent');
         }
         else {
-            toast('please enter your email address');
+            toast.error('Please enter your email address');
         }
     }
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto custom-input-container'>
             <PageTitle title="Login"></PageTitle>
             <div className='my-5 text-center'>
                 <h5 className='item-h5'>Please</h5>

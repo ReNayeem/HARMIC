@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
 import toast from 'react-hot-toast';
 import './AddItem.css'
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
@@ -29,7 +30,8 @@ const AddItem = () => {
 
 
     return (
-        <div className='container mx-auto'>
+        <div className='container custom-input-container mx-auto'>
+            <PageTitle title="Add Item"></PageTitle>
             <div className='my-5 text-center'>
                 <h5 className='item-h5'>ADD ITEM</h5>
                 <h1 className='item-h1'>HERE</h1>

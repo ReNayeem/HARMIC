@@ -1,0 +1,23 @@
+.verify-email {
+    height: calc(100vh - 61px - 230.417px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify-button {
+    text-transform: uppercase;
+    padding: .3rem .6rem;
+    border: 2px solid darkolivegreen;
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 15px;
+    transition: border 1s, color .5s;
+}
+
+.verify-button:hover {
+    background-color: white;
+    color: darkolivegreen;
+    font-weight: 600;
+}

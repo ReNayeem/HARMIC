@@ -1,12 +1,14 @@
 import React from 'react';
 import useItems from '../../hooks/useItems';
 import Item from '../Home/Item/Item';
-import './AllItems.css'
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const AllItems = () => {
-    const [items, setItems] = useItems()
+    const [items] = useItems()
+
     return (
         <div id="items" className='container mb-5'>
+            <PageTitle title="All Items"></PageTitle>
             <div className="row">
                 <div className='my-5 text-center'>
                     <h5 className='item-h5'>All</h5>

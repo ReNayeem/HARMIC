@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 61px - 230.617px);
+    justify-content: center;
+}
+
+.h1-404 {
+    text-transform: Uppercase;
+    margin-bottom: 1em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+    color: #E4E5E6;
+}
+
+.h1-404 {
+    position: relative;
+    background: linear-gradient(to right, #ff0000, #a80101a1, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h2-404 {
+    margin-top: -1.15em;
+    font-family: 'Pirata One', cursive;
+    font-size: 3rem;
+    color: rgb(90, 138, 58);
+    text-align: center;
+}
+
+.h2-404 spam {
+    font-size: .5em;
+}
+
+@media only screen and (max-width: 688px) {
+    .not-found {
+        height: calc(100vh - 302.2px);
+    }
+}

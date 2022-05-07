@@ -34,6 +34,7 @@
     border: .1875rem solid white;
     color: #1e1d23;
     font-weight: 700;
+    transition: border .5s, color 1s;
 }
 
 .newsletter .footer-button {
@@ -45,6 +46,7 @@
     border: .1875rem solid white !important;
     color: #1e1d23;
     font-weight: 700;
+    transition: background .5s, border 1s;
 }
 
 .newsletter:hover .form-control {

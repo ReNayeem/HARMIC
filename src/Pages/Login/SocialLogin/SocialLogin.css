@@ -4,6 +4,7 @@
     border: 2px solid #2c2e31;
     padding: .3rem 3rem;
     border-radius: .3rem;
+    transition: background-color 1s, color .5s;
 }
 
 .google-login-button:hover {
@@ -15,8 +16,9 @@
     background-color: darkcyan;
     color: white;
     border: 2px solid darkcyan;
-    padding: .3rem 3rem;
+    padding: 0rem 3rem;
     border-radius: .3rem;
+    transition: border 1s, color .5s;
 }
 
 .github-login-button:hover {

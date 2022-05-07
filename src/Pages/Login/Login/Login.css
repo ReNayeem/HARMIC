@@ -5,12 +5,19 @@
     padding: .5rem .5rem;
 }
 
+.login-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: forestgreen;
+}
+
 .login-button {
     background-color: darkolivegreen;
     padding: .3rem 6rem;
     color: white;
     border: 2px solid darkolivegreen;
     text-transform: uppercase;
+    transition: border 1s, color .5s;
 }
 
 .login-button:hover {

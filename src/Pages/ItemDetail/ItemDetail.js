@@ -71,34 +71,32 @@ const ItemDetail = () => {
             })
     }
     return (
-        <div>
+        <div className='container mb-5'>
             <div className='my-5 item-text-header text-center'>
                 <h5 className='item-h5'>Item</h5>
                 <h1 className='item-h1'>Details</h1>
             </div>
             <hr className='w-50 mx-auto' />
-            <div className='d-flex item-details container justify-content-center align-items-center'>
-                <img className='item-detail-image' src={img} alt="" />
-                <div className='w-50'>
-                    <h3 className='item-name'>{name}</h3>
-                    <p className='item-detail'>৳ {price} TK</p>
-                    <p className='item-detail'>Quantity: {quantity}</p>
-                    <p className='item-description'><small>{description}</small></p>
-                    <p>Supplier: {supplier}</p>
-                    <div className="d-flex flex-column align-items-center justify-content-center flex-wrap">
-                        <button
-                            onClick={() => { handleDeliver() }}
-                            className="deliver-button"
-                        >
-                            Deliver
-                        </button>
-                        <form onSubmit={newStock}>
-                            <span className="d-flex">
-                                <input type="number" name="number" required /> <br />
-                                <input className="update-stock-button" type="submit" value="UPDATE STOCK" />
-                            </span>
-                        </form>
+            <div className='item-details-2'>
+                <div className='d-flex flex-wrap item-details justify-content-center align-items-center'>
+                    <img className='item-detail-image' src={img} alt="" />
+                    <div className='w-50'>
+                        <h3 className='item-name'>{name}</h3>
+                        <p className='item-detail'>৳ {price} TK</p>
+                        <p className='item-detail'>Quantity: {quantity}</p>
+                        <p className='item-description'><small>{description}</small></p>
+                        <p>Supplier: {supplier}</p>
                     </div>
+                </div>
+                <div className="d-flex mt-3 flex-column align-items-center justify-content-center flex-wrap">
+                    <button onClick={() => { handleDeliver() }}
+                        className="deliver-button mb-3">DELIVER</button>
+                    <form className='update-item' onSubmit={newStock}>
+                        <span className="d-flex">
+                            <input placeholder='input here' className='quantity-input text-center' type="number" name="number" required /> <br />
+                            <input className="update-stock-button" type="submit" value="UPDATE STOCK" />
+                        </span>
+                    </form>
                 </div>
             </div>
         </div>

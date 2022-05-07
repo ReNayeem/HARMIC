@@ -15,6 +15,10 @@
     padding: .5rem 1rem;
 }
 
+.manage-item-table tr {
+    transition: background-color .5s;
+}
+
 .manage-item-table tr:hover {
     background-color: #ddd;
 }
@@ -32,10 +36,17 @@
     color: white;
     padding: 0rem 1.48rem;
     border: 2px solid rgb(153, 33, 33);
+    transition: border 1s, color .5s;
 }
 
 .remove-button:hover {
     background-color: #ddd;
     color: rgb(153, 33, 33);
     border: 2px solid rgb(153, 33, 33);
+}
+
+@media only screen and (min-width: 1000px) {
+    .custom-table-container {
+        max-width: 936px;
+    }
 }

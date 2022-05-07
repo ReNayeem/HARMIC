@@ -6,16 +6,16 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
 import useToken from '../../../hooks/useToken';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
-        error,
+        loading
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updateProfile, updating] = useUpdateProfile(auth);
     const [token] = useToken(user);
     const navigate = useNavigate();
 
@@ -36,16 +36,15 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
         console.log('Updated profile');
-        // 
     }
 
     return (
-        <div className='register-form container'>
+        <div className='register-form container custom-input-container'>
+            <PageTitle title="Register"></PageTitle>
             <div className='my-5 text-center'>
                 <h5 className='item-h5'>Please</h5>
                 <h1 className='item-h1'>Register</h1>

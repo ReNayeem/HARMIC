@@ -1,11 +1,11 @@
 import React from 'react';
-import sleeping from '../../../images/sleeping.jpg';
+import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <div>
-            <h2 className='text-primary text-center'>Mechanic is sleeping</h2>
-            <img className='w-100' src={sleeping} alt="" />
+        <div className='not-found'>
+            <h1 className='h1-404 text-center'>404!</h1>
+            <h2 className='h2-404'>The page you are looking for is not found</h2>
         </div>
     );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import google from '../../../images/social/google.png';
-import facebook from '../../../images/social/facebook.png';
 import github from '../../../images/social/github.png';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
@@ -34,7 +33,7 @@ const SocialLogin = () => {
 
     return (
         <div>
-            <div className='d-flex w-75 mx-auto align-items-center'>
+            <div className='d-flex custom-input-container mx-auto align-items-center'>
                 <div style={{ height: '1px' }} className='bg-success w-50'></div>
                 <p className='mt-3 px-2'>or</p>
                 <div style={{ height: '1px' }} className='bg-success w-50'></div>
@@ -49,7 +48,7 @@ const SocialLogin = () => {
                 </button>
                 <button
                     onClick={() => signInWithGithub()}
-                    className='github-login-button mx-auto'>
+                    className='github-login-button d-flex align-items-center mx-auto'>
                     <img style={{ width: '30px' }} src={github} alt="" />
                     <span className='m-2'>GitHub Sign In</span>
                 </button>
