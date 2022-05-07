@@ -40,7 +40,7 @@ const ManageItems = () => {
                     <table className='manage-item-table'>
                         <tr>
                             <td className='w-50'><h5>{item.name}</h5></td>
-                            <td className='w-25'><h5>{item.price}</h5></td>
+                            <td className='w-25'><h5>৳ {item.price} TK</h5></td>
                             {/* <td><h5>{item.quantity}</h5></td>
                             <td><h5>{item.supplier}</h5></td> */}
                             <td className='w-25 text-center'><button className='remove-button' onClick={() => handleDelete(item._id)}>X</button></td>

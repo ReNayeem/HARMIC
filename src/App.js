@@ -15,6 +15,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import AllItems from './Pages/AllItems/AllItems';
+import MyItems from './Pages/MyItems/MyItems';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -38,20 +40,26 @@ function App() {
             <AddItem></AddItem>
           </RequireAuth>
         }></Route>
+        <Route path="/MyItems" element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>
+        }></Route>
         <Route path="/manage" element={
           <RequireAuth>
             <ManageItems></ManageItems>
           </RequireAuth>
         }></Route>
-        <Route path="/orders" element={
+        {/* <Route path="/orders" element={
           <RequireAuth>
             <Order></Order>
           </RequireAuth>
-        }></Route>
+        }></Route> */}
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer />
+      <Toaster />
     </div>
   );
 }
