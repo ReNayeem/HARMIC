@@ -8,7 +8,10 @@ const AllItems = () => {
     return (
         <div id="items" className='container mb-5'>
             <div className="row">
-                <h1 className='text-primary text-center my-5'>All items</h1>
+                <div className='my-5 text-center'>
+                    <h5 className='item-h5'>All</h5>
+                    <h1 className='item-h1'>Items</h1>
+                </div>
                 <div className="items-container">
                     {
                         items.map(item => <Item
