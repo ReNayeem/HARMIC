@@ -2,7 +2,8 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
+import './AddItem.css'
 
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
@@ -21,24 +22,27 @@ const AddItem = () => {
             .then(res => res.json())
             .then(result => {
                 event.target.reset()
-                toast.success(`Moori kha`, { id: 'success' })
+                toast.success(`Successfully Added`, { id: 'success' })
                 console.log(result);
             })
     };
 
 
     return (
-        <div className='w-50 mx-auto'>
-            <h2>Please add a item</h2>
+        <div className='container mx-auto'>
+            <div className='my-5 text-center'>
+                <h5 className='item-h5'>ADD ITEM</h5>
+                <h1 className='item-h1'>HERE</h1>
+            </div>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2' readOnly value={user?.email} {...register("email")} />
-                <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
-                <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
-                <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
-                <textarea className='mb-2' placeholder='Description' {...register("description")} />
-                <input className='mb-2' placeholder='Supplier' {...register("supplier")} />
-                <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
-                <input type="submit" value="Add Item" />
+                <input required className='mb-2 add-item-input' placeholder='Name' {...register("name")} />
+                <input className='mb-2 add-item-input' readOnly value={user?.email} {...register("email")} />
+                <input required className='mb-2 add-item-input' placeholder='Price' type="number" {...register("price")} />
+                <input required className='mb-2 add-item-input' placeholder='Quantity' type="number" {...register("quantity")} />
+                <textarea required className='mb-2 add-item-input' placeholder='Description' {...register("description")} />
+                <input required className='mb-2 add-item-input' placeholder='Supplier' {...register("supplier")} />
+                <input className='mb-2 add-item-input' placeholder='Photo URL' type="text" {...register("img")} />
+                <input className='add-item-button mb-5' type="submit" value="Add Item" />
             </form>
         </div>
 

@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import axios from 'axios';
 import useToken from '../../../hooks/useToken';
+import './Login.css'
 
 const Login = () => {
     const emailRef = useRef('');
@@ -64,26 +65,34 @@ const Login = () => {
     }
 
     return (
-        <div className='container w-50 mx-auto'>
+        <div className='container mx-auto'>
             <PageTitle title="Login"></PageTitle>
-            <h2 className='text-primary text-center mt-2'>Please Login</h2>
+            <div className='my-5 text-center'>
+                <h5 className='item-h5'>Please</h5>
+                <h1 className='item-h1'>Login</h1>
+            </div>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    <Form.Control className='login-input' ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    <Form.Control className='login-input' ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                <Button className=" mx-auto d-block login-button mb-2" type="submit">
                     Login
                 </Button>
             </Form>
             {errorElement}
-            <p>New to Harmic? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <div className='d-flex mt-5 flex-wrap align-items-center justify-content-center'>
+
+                <p className='px-2'>New to <span className='text-success'>HARMIC</span>? <Link to="/register" className='login-text text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
+
+                <p className='px-2'>Forget Password? <button className='btn p-0 btn-link login-text text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+
+            </div>
             <SocialLogin></SocialLogin>
 
-        </div>
+        </div >
     );
 };
 

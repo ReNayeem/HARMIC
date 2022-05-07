@@ -19,8 +19,11 @@ const MyItems = () => {
     }, [user.email])
     return (
         <div>
-            <h1>My items</h1>
-            <p>{user.email}</p>
+            <div className='my-5 text-center'>
+                <h4 className='item-h5 text-success'>{user.displayName}</h4>
+                <h6 className='item-h5'>{user.email}</h6>
+                <h1 className='item-h1'>ADDED ITEMS</h1>
+            </div>
             {
                 myItems.map(sendMyItem => <MyItem key={MyItem._id} sendMyItem={sendMyItem}></MyItem>)
             }

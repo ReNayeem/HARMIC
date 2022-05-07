@@ -85,26 +85,21 @@ const ItemDetail = () => {
                     <p className='item-detail'>Quantity: {quantity}</p>
                     <p className='item-description'><small>{description}</small></p>
                     <p>Supplier: {supplier}</p>
-                    <div className="col-sm-12 col-md-6">
+                    <div className="d-flex flex-column align-items-center justify-content-center flex-wrap">
                         <button
                             onClick={() => { handleDeliver() }}
-                            className="deliver-btn me-1"
+                            className="deliver-button"
                         >
                             Deliver
                         </button>
                         <form onSubmit={newStock}>
                             <span className="d-flex">
                                 <input type="number" name="number" required /> <br />
-                                <input className="btn ms-1" type="submit" value="Restock" />
+                                <input className="update-stock-button" type="submit" value="UPDATE STOCK" />
                             </span>
                         </form>
                     </div>
                 </div>
-                {/* <div className='text-center'>
-                <Link to={`/checkout/${itemId}`}>
-                    <button className='btn btn-primary'>Proceed Checkout</button>
-                </Link>
-            </div> */}
             </div>
         </div>
     );
