@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Item from '../Item/Item';
 import './Items.css';
@@ -16,7 +17,7 @@ const Items = () => {
     return (
         <div id="items" className='container'>
             <PageTitle title="Home"></PageTitle>
-            <div className="row">
+            <div className="row mb-3">
                 <div className='my-5 text-center'>
                     <h5 className='item-h5'>SEE OUR LATEST</h5>
                     <h1 className='item-h1'>ARRIVAL ITEMS</h1>
@@ -30,6 +31,16 @@ const Items = () => {
                         </Item>)
                     }
                 </div>
+            </div>
+            <div className='d-flex justify-content-end'>
+                <Link as={Link} to="manage">
+                    <button className="banner-button">
+                        <span className="hover-underline-animation"> Manage items </span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                </Link>
             </div>
         </div>
     );

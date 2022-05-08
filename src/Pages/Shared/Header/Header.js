@@ -26,21 +26,21 @@ const Header = () => {
                         <Nav className="me-auto navbar-link">
                             {/* <Nav.Link href="home">Home</Nav.Link> */}
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/AllItems">Items</Nav.Link>
+                            <Nav.Link as={Link} to="/AllItems">All Items</Nav.Link>
                             <Nav.Link as={Link} to="Blogs">Blogs</Nav.Link>
                         </Nav>
                         <Nav className='navbar-link'>
                             {
                                 user && <>
-                                    <Nav.Link as={Link} to="AddItem">Add</Nav.Link>
-                                    <Nav.Link as={Link} to="manage">Manage</Nav.Link>
+                                    <Nav.Link as={Link} to="AddItem">Add Item</Nav.Link>
+                                    <Nav.Link as={Link} to="manage">Manage Items</Nav.Link>
                                     <Nav.Link as={Link} to="MyItems">My Items</Nav.Link>
                                     {/* <Nav.Link as={Link} to="orders">Orders</Nav.Link> */}
                                 </>
                             }
                             {
                                 user ?
-                                    <button className='btn navbar-link btn-link text-decoration-none' onClick={handleSignOut}>Sign out</button>
+                                    <button className='btn navbar-link btn-link text-decoration-none' onClick={handleSignOut}>Logout</button>
                                     :
                                     <Nav.Link as={Link} to="login">
                                         Login

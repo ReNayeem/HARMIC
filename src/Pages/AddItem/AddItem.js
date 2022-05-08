@@ -11,7 +11,6 @@ const AddItem = () => {
     const [user] = useAuthState(auth)
 
     const onSubmit = (data, event) => {
-        console.log(data);
         const url = `https://harmic.herokuapp.com/items`;
         fetch(url, {
             method: 'POST',
@@ -24,7 +23,6 @@ const AddItem = () => {
             .then(result => {
                 event.target.reset()
                 toast.success(`Successfully Added`, { id: 'success' })
-                console.log(result);
             })
     };
 

@@ -5,7 +5,6 @@ const useItemDetail = itemId => {
 
     useEffect(() => {
         const url = `https://harmic.herokuapp.com/items/${itemId}`;
-        console.log(url);
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));

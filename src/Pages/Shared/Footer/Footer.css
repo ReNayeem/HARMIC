@@ -18,10 +18,11 @@
     font-size: 1.5rem;
     color: white;
     padding: 0 1rem;
+    transition: color 1s;
 }
 
 .footer .footer-social a:hover i {
-    color: forestgreen;
+    color: rgb(113, 146, 55);
 }
 
 .newsletter .form-control {
