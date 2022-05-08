@@ -24,6 +24,6 @@ https://harmic-official.web.app/
 <li>My Items page for showing that particular logged-in user all the items in table form and have the delete option.</li>
 <li>Have a login and register page.</li>
 <li>Users can sign in and register with email, Google, and GitHub.</li>
-<li>404 page for wrong url.</li>
+<li>404 page for the wrong URL.</li>
 
 <h3>Thank you.🙂</h3>
