@@ -26,4 +26,4 @@ https://harmic-official.web.app/
 <li>Users can sign in and register with email, Google, and GitHub.</li>
 <li>404 page for wrong url.</li>
 
-Thank you.🙂
+<h3>Thank you.🙂</h3>
