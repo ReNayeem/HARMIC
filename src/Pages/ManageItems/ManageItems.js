@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useItems from '../../hooks/useItems';
+import Loading from '../Shared/Loading/Loading';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 import './ManageItems.css'
 
@@ -36,6 +37,9 @@ const ManageItems = () => {
                         <th className='w-25 text-center'>Remove</th>
                     </tr>
                 </table>
+                {
+                    items.length === 0 ? (<Loading></Loading>) : ''
+                }
             </div>
             {
                 items.map(item =>

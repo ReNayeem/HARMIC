@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
 import Item from '../Item/Item';
 import './Items.css';
@@ -22,6 +23,9 @@ const Items = () => {
                     <h5 className='item-h5'>SEE OUR LATEST</h5>
                     <h1 className='item-h1'>ARRIVAL ITEMS</h1>
                 </div>
+                {
+                    items.length === 0 ? (<Loading></Loading>) : ''
+                }
                 <div className="items-container">
                     {
                         items.slice(0, 6).map(item => <Item

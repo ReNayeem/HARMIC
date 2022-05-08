@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import useItems from '../../hooks/useItems';
+import Loading from '../Shared/Loading/Loading';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const MyItems = () => {
@@ -50,6 +51,9 @@ const MyItems = () => {
                         <th className='w-25 text-center'>Remove</th>
                     </tr>
                 </table>
+                {
+                    items.length === 0 ? (<Loading></Loading>) : ''
+                }
             </div>
             {
                 myItems.map(sendMyItem =>

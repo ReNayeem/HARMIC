@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useItems from '../../hooks/useItems';
 import Item from '../Home/Item/Item';
+import Loading from '../Shared/Loading/Loading';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const AllItems = () => {
@@ -15,6 +16,9 @@ const AllItems = () => {
                     <h5 className='item-h5'>All</h5>
                     <h1 className='item-h1'>Items</h1>
                 </div>
+                {
+                    items.length === 0 ? (<Loading></Loading>) : ''
+                }
                 <div className="items-container">
                     {
                         items.map(item => <Item
