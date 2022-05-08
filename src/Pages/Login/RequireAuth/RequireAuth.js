@@ -10,7 +10,7 @@ import './RequireAuth.css'
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
-    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+    const [sendEmailVerification] = useSendEmailVerification(auth);
     if (loading) {
         return <Loading></Loading>
     }
