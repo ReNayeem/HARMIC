@@ -12,12 +12,12 @@ const Footer = () => {
                         <div className="col-md-6 text-center">
                             <div className="footer-social pb-4 text-center">
                                 <h4 className='text-white mb-3'>Stay in touch</h4>
-                                <a href=""><i className="fab fa-facebook"></i></a>
-                                <a href=""><i className="fab fa-twitch"></i></a>
-                                <a href=""><i className="fab fa-youtube"></i></a>
-                                <a href=""><i className="fab fa-dribbble"></i></a>
-                                <a href=""><i className="fab fa-linkedin"></i></a>
-                                <a href=""><i className="fab fa-instagram"></i></a>
+                                <a><i className="fab fa-facebook"></i></a>
+                                <a><i className="fab fa-twitch"></i></a>
+                                <a><i className="fab fa-youtube"></i></a>
+                                <a><i className="fab fa-dribbble"></i></a>
+                                <a><i className="fab fa-linkedin"></i></a>
+                                <a><i className="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div className="col-md-6">

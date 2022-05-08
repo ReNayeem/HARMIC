@@ -19,6 +19,7 @@
     color: white;
     padding: 0 1rem;
     transition: color 1s;
+    cursor: pointer;
 }
 
 .footer .footer-social a:hover i {
@@ -48,6 +49,7 @@
     color: #1e1d23;
     font-weight: 700;
     transition: background .5s, border 1s;
+    cursor: pointer;
 }
 
 .newsletter:hover .form-control {
