@@ -9,3 +9,7 @@
     font-weight: 600;
     text-align: center;
 }
+
+.logout-button:hover {
+    color: darkolivegreen;
+}

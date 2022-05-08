@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useItemDetail from '../../hooks/useItemDetail';
-import Loading from '../Shared/Loading/Loading';
 import './ItemDetail.css'
 
 const ItemDetail = () => {

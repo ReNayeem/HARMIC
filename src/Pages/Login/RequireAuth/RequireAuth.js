@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { Navigate, useLocation } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 import './RequireAuth.css'
 
 const RequireAuth = ({ children }) => {
@@ -34,6 +35,7 @@ const RequireAuth = ({ children }) => {
             >
                 Send Verification Email Again
             </button>
+            <PageTitle title="Verify email"></PageTitle>
         </div>
     }
 

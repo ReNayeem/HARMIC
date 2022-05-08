@@ -70,3 +70,27 @@ p {
     transform: rotate(360deg);
   }
 }
+
+/* custom firefox scrollbar start */
+html {
+  scrollbar-width: normal;
+  scrollbar-color: #00a149 rgb(231, 231, 231);
+}
+
+/* custom firefox scrollbar end */
+
+/* custom scrollbar for other browser start */
+html::-webkit-scrollbar {
+  width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #00a149;
+}
+
+
+html::-webkit-scrollbar-track {
+  background-color: rgb(231, 231, 231);
+}
+
+/* custom scrollbar for other browser end */
