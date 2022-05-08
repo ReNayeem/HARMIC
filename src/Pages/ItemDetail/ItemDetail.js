@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useItemDetail from '../../hooks/useItemDetail';
+import Loading from '../Shared/Loading/Loading';
 import './ItemDetail.css'
 
 const ItemDetail = () => {
@@ -77,7 +78,7 @@ const ItemDetail = () => {
             <div className='item-details-2'>
                 <div className='d-flex flex-wrap item-details justify-content-center align-items-center'>
                     <img className='item-detail-image' src={img} alt="" />
-                    <div className='w-50'>
+                    <div className='w-auto'>
                         <h3 className='item-name'>{name}</h3>
                         <p className='item-detail'>৳ {price} TK</p>
                         <p className='item-detail'>Quantity: {quantity}</p>

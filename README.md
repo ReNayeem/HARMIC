@@ -26,4 +26,7 @@ https://harmic-official.web.app/
 <li>Users can sign in and register with email, Google, and GitHub.</li>
 <li>404 page for the wrong URL.</li>
 
+<h3>stack overflow question answer</h3>
+https://stackoverflow.com/questions/7953933/heroku-application-error/72160029#72160029
+
 <h3>Thank you.🙂</h3>
