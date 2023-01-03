@@ -10,7 +10,7 @@ const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://harmic.herokuapp.com/items')
+        fetch('https://harmic-server.vercel.app//items')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])

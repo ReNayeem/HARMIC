@@ -11,7 +11,7 @@ const ManageItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Please select 'OK' for delete.");
         if (proceed) {
-            const url = `https://harmic.herokuapp.com/items/${id}`;
+            const url = `https://harmic-server.vercel.app//items/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

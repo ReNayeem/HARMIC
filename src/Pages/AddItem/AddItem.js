@@ -11,7 +11,7 @@ const AddItem = () => {
     const [user] = useAuthState(auth)
 
     const onSubmit = (data, event) => {
-        const url = `https://harmic.herokuapp.com/items`;
+        const url = `https://harmic-server.vercel.app//items`;
         fetch(url, {
             method: 'POST',
             headers: {

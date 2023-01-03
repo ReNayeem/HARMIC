@@ -7,7 +7,7 @@ const useToken = user => {
         const getToken = async () => {
             const email = user?.user?.email;
             if (email) {
-                const { data } = await axios.post('https://harmic.herokuapp.com/login', { email });
+                const { data } = await axios.post('https://harmic-server.vercel.app//login', { email });
                 setToken(data.accessToken);
                 localStorage.setItem('accessToken', data.accessToken);
             }
