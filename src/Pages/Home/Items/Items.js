@@ -10,7 +10,7 @@ const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://harmic-server.vercel.app//items')
+        fetch('https://harmic-server.up.railway.app/items')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])

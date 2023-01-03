@@ -21,7 +21,7 @@ const ItemDetail = () => {
             description: item.description,
             price: item.price
         }
-        const url = `https://harmic-server.vercel.app//items/${itemId}`
+        const url = `https://harmic-server.up.railway.app/items/${itemId}`
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -51,7 +51,7 @@ const ItemDetail = () => {
             description: item.description,
             price: item.price
         }
-        const url = `https://harmic-server.vercel.app//items/${itemId}`
+        const url = `https://harmic-server.up.railway.app/items/${itemId}`
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -12,7 +12,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Please select 'OK' for delete.");
         if (proceed) {
-            const url = `https://harmic-server.vercel.app//items/${id}`;
+            const url = `https://harmic-server.up.railway.app/items/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -29,7 +29,7 @@ const MyItems = () => {
     useEffect(() => {
         const myItemsHandle = async () => {
             const email = user.email
-            const url = `https://harmic-server.vercel.app//AddItem?email=${email}`;
+            const url = `https://harmic-server.up.railway.app/AddItem?email=${email}`;
             const { data } = await axios.get(url)
             setMyItems(data)
         }
